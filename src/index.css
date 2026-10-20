@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #071522;
+  --color-surface: #061421;
+  --color-surface-dim: #061421;
+  --color-surface-bright: #2d3a49;
+  --color-surface-container-lowest: #020f1c;
+  --color-surface-container-low: #0f1d2a;
+  --color-surface-container: #13212e;
+  --color-surface-container-high: #1e2b39;
+  --color-surface-container-highest: #293644;
+  --color-surface-variant: #293644;
+  --color-on-surface: #d6e4f6;
+  --color-on-surface-variant: #dfbfc0;
+  --color-outline: #a78a8b;
+  --color-outline-variant: #584142;
+
+  --color-primary: #ffb2b8;
+  --color-on-primary: #67001d;
+  --color-primary-container: #8f1230;
+  --color-on-primary-container: #ff9ba4;
+  --color-primary-hover: #aa1a3c;
+  --color-primary-fixed: #ffdadb;
+  --color-primary-fixed-dim: #ffb2b8;
+  --color-on-primary-fixed: #40000f;
+
+  --color-secondary: #7cd1fb;
+  --color-on-secondary: #003548;
+  --color-secondary-container: #00789e;
+  --color-on-secondary-container: #e9f6ff;
+  --color-secondary-fixed: #c1e8ff;
+  --color-secondary-fixed-dim: #7cd1fb;
+
+  --color-tertiary: #b7c8db;
+  --color-on-tertiary: #213241;
+  --color-tertiary-container: #394a5a;
+  --color-on-tertiary-container: #a7b9cc;
+
+  --color-border-structural: #263746;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "Space Grotesk", monospace;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: #061421;
+  color: #d6e4f6;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #061421;
+}
+::-webkit-scrollbar-thumb {
+  background: #263746;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #394a5a;
+}
+
+/* Subtle glow effects */
+.glow-burgundy {
+  box-shadow: 0 0 30px -5px rgba(143, 18, 48, 0.4);
+}
+.glow-cyan {
+  box-shadow: 0 0 30px -5px rgba(124, 209, 251, 0.3);
+}
+.card-hover-cyan:hover {
+  border-color: #7cd1fb;
+  box-shadow: 0 0 0 1px #7cd1fb, 0 8px 24px -4px rgba(7, 21, 34, 0.8);
+}
